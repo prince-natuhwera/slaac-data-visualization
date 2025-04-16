@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SLAAC DATA VIEWER</title>
+  <!-- Leaflet CSS for map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>SLAAC DATA VIEWER</h1>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar with app info -->
+    <aside id="sidebar">
+      <h2>About</h2>
+      <p>
+        SLAAC DATA VIEWER allows you to search and visualize land parcel data from the Sheema district database.
+        <br><br>
+        <strong>How it works:</strong>
+        <ol>
+          <li>Enter a Parcel ID or Owner Name in the search bar.</li>
+          <li>Click "Search" to find and zoom to the parcel on the map.</li>
+          <li>Click on a parcel to view its details.</li>
+        </ol>
+      </p>
+    </aside>
+
+    <!-- Main content: Search and Map -->
+    <main>
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Enter Parcel ID or Owner Name..." />
+        <button id="search-btn">Search</button>
+      </div>
+      <!-- Map Section -->
+      <div id="map"></div>
+      <!-- Parcel Details Popup -->
+      <div id="parcel-details" class="hidden"></div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Designed by: I&amp;G MAX CONSULTS LIMITED
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Frontend JS -->
+  <script src="app.js"></script>
+</body>
+</html>

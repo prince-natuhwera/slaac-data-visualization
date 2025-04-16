@@ -1,0 +1,13 @@
+Input: You're an expert in web mapping with knowledge in both front end and back-end development.
+Context: Create for me an eye catching, modern and nice looking front end for my project named "SLAAC DATA VIEWER" with a footer "Designed by: I&G MAX CONSULTS LIMITED". 
+Additionally, create a javascript file that will handle the backend of the front end so that it can handle the user requests.
+The front end will be fetching data from the PostgreSQL database named "" with this as the SQL code "" for table having the spatial data.
+Ensure to use node js for the backend, leaflet  for the mapping.
+Use detailed comments in the code to ensure that i understand the code very well because am a beginner.
+
+This project is aimed at retrieving parcel data from the database and display it on the map. It should be designed in a way that it has the following items; 
+- header with the name of the project centred
+- search bar where the user input the Parcel ID or Name of the parcel owner for querying the parcel.
+- Map visualization section with base maps (openstreet map, and satellite image) where the parcel searched for should zoom in and the user can see the details of the parcel, user can zoom in and out. 
+- the application should be responsive and interactive.
+- add a sidebar section which has details about the application and how it works.
